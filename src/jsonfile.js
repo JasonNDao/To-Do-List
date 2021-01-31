@@ -1,22 +1,22 @@
 const jsonf=[
     {
         id:1,
-        name:"Bob Dole",
+        name:"Laundry",
         completed:false
     },
     {
         id:2,
-        name:"Robert E Lee",
+        name:"Update Driver's License",
         completed:true
     },
     {
         id:3,
-        name:"Robby Anderson",
+        name:"Get napkins",
         completed:true
     },
     {
         id:4,
-        name:"Bobby Wagner",
+        name:"Run the marathon",
         completed:true
     },
 ]
