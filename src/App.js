@@ -13,6 +13,7 @@ class App extends React.Component {
     };
     this.vetooveride = this.vetooveride.bind(this);//bind to App to change state
     this.hc = this.hc.bind(this);
+    this.add=this.add.bind(this);
   }
   hc(id) {
     this.setState(prevState => {
@@ -30,7 +31,7 @@ class App extends React.Component {
   vetooveride() {
     this.setState(   //hardcoded setstate in
       {
-        data: jsonf2
+        data: null
       }
       /*
       this.setState(prevState=>{   //change state by using previous state
@@ -41,12 +42,16 @@ class App extends React.Component {
 
     )
   }
+  add(){
+    alert("Hi");
+  }
   render() {
     const newarray = this.state.data.map((temp) => <Todo key={temp.id} keys={temp.id} name={temp.name} 
     hc={this.hc} completed={temp.completed} />)
     return (
       <div className="App">{newarray}
         <button onClick={this.vetooveride}>Reset</button>
+        <button onClick={this.add}>Add</button>
       </div>  /*can use array as data */
     );
   }
