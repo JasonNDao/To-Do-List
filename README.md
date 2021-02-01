@@ -1,2 +1,2 @@
-# To visit Todo List
+# To visit todo list
 Go to [website](https://todojnd.herokuapp.com/)
